@@ -4,7 +4,7 @@
          
      $.ajax({
          type : "POST",
-         url : "",
+         url : "login_php.php",
          data : "name="+document.getElementById('username').value+"&pswd="+document.getElementById('password').value,
          success : function(data) {
              alert('Thank you for filling in your details!')
