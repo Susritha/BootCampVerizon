@@ -1,0 +1,59 @@
+<html>
+<body bgcolor="#FE642E">
+<font color="white">
+<form name="reg" action="code_exec.php" onsubmit="return validateForm()" method="post">
+
+<table width="274" border="0" align="center" cellpadding="2" cellspacing="0">
+  <tr>
+  <th>TEACHER</th>
+    <td colspan="2">
+		<div align="center">
+		  <?php 
+		$remarks=$_GET['remarks'];
+		if ($remarks==null and $remarks=="")
+		{
+		echo 'Register Here';
+		}
+		if ($remarks=='success')
+		{
+		echo 'Registration Success';
+		}
+		?>	
+	    </div></td>
+  </tr>
+  <tr>
+    <td width="95"><div align="right">Name:</div></td>
+    <td width="171"><input type="text" name="fname" /></td>
+  </tr><br>
+  <tr>
+    <td><div align="right">School:</div></td>
+    <td><input type="text" name="lname" /></td>
+  </tr><br>
+  <tr>
+    <td><div align="right">Gender:</div></td>
+    <td><input type="text" name="mname" /></td>
+  </tr><br>
+  <tr>
+    <td><div align="right">Address:</div></td>
+    <td><input type="text" name="address" /></td>
+  </tr><br>
+  <tr>
+    <td><div align="right">Qualification:</div></td>
+    <td><input type="text" name="contact" /></td>
+  </tr><br>
+  <tr>
+    <td><div align="right">experience</div></td>
+    <td><input type="text" name="pic" /></td>
+  </tr><br>
+ <tr>
+    <td><div align="right">d.o.j</div></td>
+    <td><input type="text" name="dojo" /></td>
+  </tr><br>
+ <tr>
+    
+</table>
+<input type="button" value="submit" align="center"/
+</form>
+</font>
+</body>
+</html>
