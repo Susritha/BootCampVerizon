@@ -4,7 +4,9 @@
 
  <meta charset="utf-8">
 
- <title>Social-Tooltip</title>
+ <title>LOGIN</title>
+ <script type="text/javascript" charset="utf-8" src="1.js"></script>
+ <script type="text/javascript" charset="utf-8" src="jquery-1.9.1.min.js"></script>
 <style type="text/css">
 @charset "utf-8";
 /* CSS Document */
@@ -97,6 +99,7 @@ form fieldset a:hover { text-decoration: underline; }
 
 </style>
 
+
  
 </head>
 
@@ -107,16 +110,16 @@ form fieldset a:hover { text-decoration: underline; }
 
   <h1><strong>Welcome.</strong> Please login.</h1>
 
-  <form id="login_form"  method="get">
+  <form id="login_form" >
 
    <fieldset>
    <p><u><b>Enter Username:<b></u></p>
-	<p><input type="text" required value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Username" -->
+	<p><input type="text" required id="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Username" -->
 	<br><br>
 	<p><u>Enter Password:<u></p>
-    <p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Password" -->
+    <p><input type="password" required id="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p> <!-- JS because of IE support; better: placeholder="Password" -->
 
-    <p><input type="submit" value="Login"></p>
+    <p><input type="submit" value="Login" onclick="login_submit()"></p>
 
    </fieldset>
 
@@ -124,6 +127,5 @@ form fieldset a:hover { text-decoration: underline; }
 
  
  </div> <!-- end login -->
-
 </body> 
 </html>
