@@ -4,9 +4,9 @@
 include ("dbconnect.php");
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST');
-$name = $_REQUEST['username'];
-$password = $_REQUEST['password'];
- $qry="SELECT * FROM login WHERE username = 'adi' AND password = 'aditya';";
+$name = $_POST['username'];
+$password = $_POST['password'];
+ $qry="SELECT * FROM login WHERE username = '".$name."' AND password = '".$password."';";
  
  $result=mysql_query($qry);
  
@@ -14,7 +14,8 @@ $password = $_REQUEST['password'];
 $hello= mysql_fetch_assoc($result);
 echo $hello['role'];
 
-if ($hello['role'] == 'cc'){include '';}
+//if ($hello['role'] == 'cc'){include ''regis_cc.html";}
+//else if ($hello['role'] == 'teacher')
 
 
 

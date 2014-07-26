@@ -1,7 +1,6 @@
 function login_submit(){ 
 	 alert('hi');
-        alert('hi'+document.getElementById('username').value+document.getElementById('password').value);
-        $.ajax({
+          $.ajax({
          type : "POST",
          url : "login_php.php",
          data : "name="+document.getElementById('username').value+"&password="+document.getElementById('password').value,
