@@ -8,12 +8,11 @@ $location=$_POST['location'];
 $trainingnum = $_POST['trainingnum'];
 $schoolsnum= $_POST['schoolsnum'];
 $teachersnum = $_POST['teachersnum'];
-
+echo $trname;
 $sql = "INSERT INTO trainer  
-VALUES('trid','trname','location','trainingnum','schoolsnum',
-'teachersnum')";
+VALUES('$trid','$trname','$location','$trainingnum','$schoolsnum',
+'$teachersnum')";
 
-echo $sql;
 
 if (!mysql_query($sql,$con))
  	 {
