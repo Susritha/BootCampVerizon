@@ -1,0 +1,84 @@
+<html>
+
+<body bgcolor="#F7BE81" >
+<title>Teacher Feedback Form</title><br><br>
+<form name="reg" action="code_exec.php" onsubmit="return validateForm()" method="post">
+<table border="2" align="center" cellpadding="2" cellspacing="0">
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+</tr>
+<tr>
+<td>0% to 10%</td>
+<td>11% to 20%</td>
+<td>21% to 30%</td>
+<td>31% to 40%</td>
+<td>41% to 50%</td>
+<td>51% to 60%</td>
+<td>61% to 70%</td>
+<td>71% to 80%</td>
+<td>81% to 90%</td>
+<td>91% to 100%</td>
+</tr>
+</table>
+<form action="fback.php" method="POST">
+<table border="2" align="center" cellpadding="2" cellspacing="0">
+  <tr>
+  <th>Feedback Form</th>
+    <td colspan="1">
+		<div align="center">
+		  <?php 
+		$remarks=$_GET['remarks'];
+		if ($remarks==null and $remarks=="")
+		{
+		echo 'Register Here';
+		}
+		if ($remarks=='success')
+		{
+		echo 'Registration Success';
+		}
+		?>	
+	    </div></td>
+  </tr>
+  <tr>
+    <td width="200">Was the content meaningful:</div></td>
+    <td width="171"><input type="number" name="" /></td>
+  </tr><br><br><br>
+  <tr>
+    <td>Were the activities useful:</div></td>
+    <td><input type="number" name="" /></td>
+  </tr><br>
+  <tr>
+    <td>Was the facilitator supportive and effective:</div></td>
+    <td><input type="number" name="" /></td>
+  </tr><br>
+  <tr>
+    <td>>Was the facilitator interactive:</div></td>
+    <td><input type="text" name="" /></td>
+  </tr><br>
+  <tr>
+    <td>Was the presentation clear:</div></td>
+    <td><input type="text" name="" /></td>
+  </tr><br>
+  <tr>
+    <td>Was the pace of presentation consistent:</div></td>
+    <td><input type="text" name="" /></td>
+  </tr><br>
+ <tr>
+    <td>Learning of the session can be used in workplace?</div></td>
+    <td><input type="text" name="" /></td>
+  </tr><br>
+ <tr>
+    
+</table>
+</form>
+</body>
+</html>

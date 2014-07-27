@@ -16,10 +16,9 @@ $password = $_POST['password'];
 $hello= mysql_fetch_assoc($result);
 echo $hello['role'];
 
-//if ($hello['role'] == 'cc'){include ''regis_cc.html";}
-//else if ($hello['role'] == 'teacher')
-
-
+if ($hello['role'] == 'teacher'){ include "teacherlog.html";}
+else if ($hello['role'] == 'trainer'){include "trainerlog.html";}
+else if($hello['role'] == 'admin'){include "Adminl.html";}  
 
 mysql_close($con);
 ?>
