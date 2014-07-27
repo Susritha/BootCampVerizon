@@ -3,18 +3,18 @@
 include ("dbconnect.php");
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST');
+$teacher_id=$_POST['teacher_id'];
 $teacher_name = $_POST['teacher_name'];
-$subject_name=$_POST('subject_name');
+$subject_name=$_POST['subname'];
 $school = $_POST['school'];
 $gender = $_POST['gender'];
 $qualification = $_POST['qualification'];
-$exp=$_POST('exp');
+$exp=$_POST['exp'];
 $doj = $_POST['doj'];
 
-$sql = "INSERT INTO teacher (`teacher_name`,`subname`,`school`,`gender`,
-`qualification`,`exp`,`doj`) 
-VALUES`teacher_name`,`subject_name`,`school`,`gender`,
-`qualification`,`exp`,`doj`)";
+$sql = "INSERT INTO teacher 
+VALUES('teacher_id','teacher_name','subject_name','school','gender',
+'qualification','exp','doj')";
 
 echo $sql;
 
