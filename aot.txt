@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	width:628px;
+	height:462px;
+	z-index:1;
+	left: 360px;
+	top: 99px;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer1">
+  <table width="625" border="1">
+    <tr>
+	<th colspan='4' align="center">Academic Observation of Teachers(AOT)</th>
+    </tr>
+    <tr>
+	  <td rowspan='3'></td>
+	  <td colspan="2">School</td><td colspan="2">Teacher</td>
+    </tr>
+	<tr><td colspan="2">Class</td><td colspan="2">Topic</td></tr>
+    <tr><td>Criteria</td><td>Methodology</td><td>Scores</td><td>Average</td></tr>
+	<tr></tr>
+	<tr>
+	<td rowspan="2">1</td><td>Planning of the lesson and curriculum completion status</td><td>1.1 Check the lesson plan diary for the details of the components of a lesson<hr />1.2 Check the lesson plan</td><td><hr></td><td></td></tr>
+	<tr>
+	<td>2</td><td>planning of the lesson and curriculum completion status</td><td>1.1 check the lesson plan diary for the details of the components of a lesson<hr />1.2 check the lesson plan</td><td><hr /></td><td></td></tr>
+  </table>
+</div>
+</body>
+</html>
