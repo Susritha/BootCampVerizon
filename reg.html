@@ -1,13 +1,59 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<style type="text/css">
+
+</style>
 </head>
-<frameset rows="20%,*">
-<frameset cols="33%,33%,33%">
-<frame src="teacher1.html" name="desc1" target="desc">
-<frame src="trainer1.html" name="desc2" target="desc">
-<frame src="cc1.html" name="desc3" target="desc">
-</frameset>
-<frame src="right.html" name="desc"/>
-</frameset>
+
+<style>
+.fontstyle{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.fontsize{font-size:14px;}
+</style>
+<body class="fontstyle fontsize">
+
+<script>
+function loadPage(page){
+
+if(page=='teacher'){
+alert(document.getElementById("contentFrame"));
+	document.getElementById("contentFrame").src="teacher.html";
+	}
+	if(page=='trainer'){
+alert(document.getElementById("contentFrame"));
+	document.getElementById("contentFrame").src="trainer.html";
+	}
+	if(page=='cc'){
+alert(document.getElementById("contentFrame"));
+	document.getElementById("contentFrame").src="cc.html";
+	}
+}
+
+</script>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+  <table width="100%">
+      <tr>
+        <th scope="col"><a onclick="loadPage('teacher');" class="ui-btn">Teacher</a></th>
+        <th scope="col"><a onclick="loadPage('trainer');" class="ui-btn">Trainer</a></th>
+		 <th scope="col"><a onclick="loadPage('cc');" class="ui-btn">CLUSTER COORDINATOR</a></th>
+      </tr>
+    </table>
+</div>
+
+<div data-role="main" class="ui-content">  
+  <iframe src='right.html' id="contentFrame" height="100%" width="100%">
+</div>
+
+</div> 
+</body>
 </html>
+
+
